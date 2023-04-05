@@ -1,0 +1,347 @@
+/* Set the main container as a flexbox with wrap */
+body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1912px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Set the header container to be centered */
+.header {
+  width: 100%;
+  max-width: 1690px;
+  height: auto;
+  margin: 0px auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 360;
+  padding: 0px 0;
+}
+
+/* Set the close icon container to be centered in the middle of the page */
+.close-icon-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Style the close icon */
+.close-icon {
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.6s ease-in-out;
+}
+
+/* Change the close icon color on hover */
+.close-icon:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* Set the navigation container */
+nav {
+  width: 100%;
+  max-width: 1690px;
+  height: auto;
+  margin: 10px auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 360;
+  padding: 10px 0;
+}
+
+/* Style the home button */
+.home-btn {
+  font-family: 'Poppins';
+  font-weight: 360;
+  line-height: 60px;
+  font-size: 28px;
+  color: #f9f9f9;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.6s ease-in-out;
+  position: relative;
+}
+
+/* Change the home button color on hover */
+.home-btn:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* Add an underline to the home button on hover */
+.home-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 50%;
+  height: 2px;
+  background-color: #000000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Make the underline visible on hover */
+.home-btn:hover::after {
+  opacity: 1;
+}
+
+/* Set the navigation list */
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Style the navigation links */
+.nav-link {
+  margin-left: -10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  position: relative; 
+  transition: color 0.6s ease-in-out;
+}
+
+/* Change the navigation link color on hover */
+.nav-link:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* Add an underline to the navigation link on hover */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  bottom: -2px;
+  width: 50%;
+  height: 2px;
+  background-color: #2f2f2f;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+/* Styling for the hover effect on navigation links */
+.nav-link:hover::after {
+  opacity: 1;
+}
+
+/* Styling for the main background image */
+.main_image {
+  background-image: url('https://www.fmsp.com/wp-content/uploads/2018/01/4_miho.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  z-index: -1;
+}
+
+/* Styling for the title section */
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 77%;
+  top: 110vh;
+}
+
+.title_name {
+  padding: 20px;
+  font-weight: 520;
+  font-size: 36px;
+  text-align: center;
+  margin-left: 10%;
+}
+
+/* Styling for the container that holds the text and images */
+.detail_container {
+  display: flex;
+  width: 100%;
+}
+
+/* Styles for the text container on the page */
+.detail_text {
+  width: 55%;
+  margin-left: -13%;
+  margin-top: 3%;
+  padding: 20px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/* Styles for the "about" section on the page */
+.detail_about {
+  width: 60%;
+  margin-top: 10%;
+  margin-left: -10%;
+  padding: 10px;
+  font-weight: 320;
+  font-size: 20px;
+}
+
+/* Styles for the "location" section on the page */
+.loaction {
+  width: 60%;
+  margin-top: -10%;
+  margin-left: -9px;
+  padding: 10px;
+  font-weight: 420;
+  font-size: 30px;
+}
+
+/* Styles for the "awards" section on the page */
+.awards {
+  width: 60%;
+  margin-top: 10%;
+  margin-left: -9px;
+  padding: 10px;
+  font-weight: 420;
+  font-size: 30px;
+}
+
+/* Styles for the first image on the page */
+.image1 img {
+  display: block;
+  margin-left: -10%;
+  width: 1200px;
+  height: auto;
+  padding-top: 10%
+}
+
+/* Styles for the container for the second image on the page */
+.container_image2 {
+  display: flex;
+  width: 100%;
+}
+
+/* Styles for the second image on the page */
+.image2 img {
+  display: block;
+  margin-left: 22%;
+  width: 600px;
+  height: auto;
+  padding-top: 10%
+}
+
+/* Styles for the text next to the second image on the page */
+.image2_text {
+  width: 35%;
+  margin-top: 4%;
+  margin-left: -3%;
+  padding: 10px;
+  font-weight: 320;
+  font-size: 20px;
+}
+
+/* Styles for the third image on the page */
+.image3 img {
+  display: block;
+  margin-left: -233px;
+  width: 1200px;
+  height: auto;
+  padding-top: 6%
+}
+
+/* Styles for the container for the fourth and fifth images on the page */
+.container_image4_5 {
+  display: flex;
+  width: 100%;
+}
+
+/* Styles for the fourth image on the page */
+.image4 img {
+  display: block;
+  margin-left: -5%;
+  width: 570px;
+  height: auto;
+  padding-top: 10%
+}
+/* Image 5 */
+.image5 img {
+  display: block;
+  margin-left: 6%;
+  width: 570px;
+  height: auto;
+  padding-top: 10%
+  }
+  
+  /* Floor plan container */
+  .floor_plan_container {
+  display: flex;
+  width: 100%;
+  }
+  
+  /* Text for floor plan */
+  .text_floor {
+  width: 55%;
+  margin-left: -3%;
+  margin-top: 8%;
+  padding: 20px;
+  font-weight: 300;
+  font-size: 20px;
+  }
+  
+  /* Floor plan image */
+  .image_floor {
+  display: block;
+  margin-left: -60%;
+  width: 1200px;
+  height: auto;
+  padding-top: 15%
+  }
+  
+  /* Prototype container */
+  .prototype_container {
+  display: flex;
+  width: 100%;
+  }
+  
+  /* Text for prototype */
+  .text_prototype {
+  width: 55%;
+  margin-left: -3%;
+  margin-top: 1%;
+  padding: 20px;
+  font-weight: 300;
+  font-size: 20px;
+  }
+  
+  /* Prototype image 1 */
+  .image_prototype img {
+  display: block;
+  margin-left: -34%;
+  width: 600px;
+  height: auto;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  }
+  
+  /* Prototype image 2 */
+  .image_prototype2 img {
+  display: block;
+  margin-left: -30%;
+  width: 600px;
+  height: auto;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  }

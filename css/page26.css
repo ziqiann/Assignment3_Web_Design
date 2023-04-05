@@ -1,0 +1,389 @@
+/* comments are the same as page1.css because the format is the same */
+body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1912px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    max-width: 1690px;
+    height: auto;
+    margin: 0px auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 360;
+    padding: 0px 0;
+}
+
+.close-icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-icon {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.6s ease-in-out;
+}
+
+.close-icon:hover {
+    color: black;
+    /* 设置hover时的颜色为黑色 */
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    max-width: 1690px;
+    height: auto;
+    margin: 10px auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 360;
+    padding: 10px 0;
+}
+
+.home-btn {
+    font-family: 'Poppins';
+    font-weight: 360;
+    line-height: 60px;
+    font-size: 28px;
+    color: #f9f9f9;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.6s ease-in-out;
+    position: relative;
+    /* 添加相对定位 */
+}
+
+.home-btn:hover {
+    color: black;
+    /* 设置hover时的颜色为黑色 */
+    text-decoration: none;
+    /* 移除hover时的文本装饰 */
+}
+
+.home-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 50%;
+    height: 2px;
+    background-color: #000000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.home-btn:hover::after {
+    opacity: 1;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-link {
+    margin-left: -10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    position: relative;
+    /* 添加相对定位 */
+    transition: color 0.6s ease-in-out;
+}
+
+.nav-link:hover {
+    color: black;
+    /* 设置hover时的颜色为黑色 */
+    text-decoration: none;
+    /* 移除hover时的文本装饰 */
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: -2px;
+    width: 50%;
+    height: 2px;
+    background-color: #2f2f2f;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    /* 添加透明度过渡效果 */
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+    /* 设置悬停时伪元素的透明度为1 */
+}
+
+.main_image {
+    background-image: url('https://www.nynesting.com/sites/default/files/343_east_30th_street.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* 使用视口高度单位来确保图片占据整个屏幕 */
+    margin: 0;
+    z-index: -1;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    /* 使用绝对定位将文本放置在图片下方 */
+    width: 77%;
+    top: 110vh;
+    /* 使文本与图片保持一定距离 */
+}
+
+.title_name {
+    padding: 20px;
+    /* 添加内边距，使文字不会贴近容器边缘 */
+    font-weight: 520;
+    font-size: 36px;
+    text-align: center;
+    margin-left: -7%;
+}
+
+.detail_container {
+    display: flex;
+    /* 设置为 flex 布局 */
+    width: 100%;
+}
+
+.detail_text {
+    width: 55%;
+    /* 根据需要调整宽度 */
+    margin-left: -13%;
+    margin-top: 3%;
+    /* 按照需要调整左边距 */
+    padding: 20px;
+    /* 添加内边距，使文字不会贴近容器边缘 */
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.detail_about {
+    width: 60%;
+    /* 根据需要调整宽度 */
+    margin-top: 10%;
+    /* 按照需要调整左边距 */
+    margin-left: -10%;
+    padding: 10px;
+    /* 添加内边距，使文字不会贴近容器边缘 */
+    font-weight: 320;
+    font-size: 20px;
+}
+
+.loaction {
+    width: 60%;
+    /* 根据需要调整宽度 */
+    margin-top: -10%;
+    /* 按照需要调整左边距 */
+    margin-left: -9px;
+    padding: 10px;
+    /* 添加内边距，使文字不会贴近容器边缘 */
+    font-weight: 420;
+    font-size: 30px;
+}
+
+.awards {
+    width: 60%;
+    /* 根据需要调整宽度 */
+    margin-top: 10%;
+    /* 按照需要调整左边距 */
+    margin-left: -9px;
+    padding: 10px;
+    /* 添加内边距，使文字不会贴近容器边缘 */
+    font-weight: 420;
+    font-size: 30px;
+}
+
+.image1 img {
+    display: block;
+    margin-left: -10%;
+    width: 1200px;
+    height: auto;
+    padding-top: 10%
+}
+
+.container_image2 {
+    display: flex;
+    /* 设置为 flex 布局 */
+    width: 100%;
+}
+
+.image2 img {
+    display: block;
+    margin-left: 22%;
+    width: 600px;
+    height: auto;
+    padding-top: 10%
+}
+
+.image2_text {
+    width: 35%;
+    /* 根据需要调整宽度 */
+    margin-top: 4%;
+    /* 按照需要调整左边距 */
+    margin-left: -3%;
+    padding: 10px;
+    /* 添加内边距，使文字不会贴近容器边缘 */
+    font-weight: 320;
+    font-size: 20px;
+}
+
+.image3 img {
+    display: block;
+    margin-left: -233px;
+    width: 1200px;
+    height: auto;
+    padding-top: 10%
+}
+
+.container_image4_5 {
+    display: flex;
+    /* 设置为 flex 布局 */
+    width: 100%;
+}
+
+.image4 img {
+    display: block;
+    margin-left: -5%;
+    width: 570px;
+    height: auto;
+    padding-top: 10%
+}
+
+.image5 img {
+    display: block;
+    margin-left: 6%;
+    width: 570px;
+    height: auto;
+    padding-top: 10%
+}
+
+.image6 img {
+    display: block;
+    margin-left: -94%;
+    margin-top: 80%;
+    width: 570px;
+    height: auto;
+    padding-top: 10%
+}
+
+.image8 img {
+    display: block;
+    margin-left: -10%;
+    margin-top: 8%;
+    width: 1200px;
+    height: auto;
+    padding-top: -50%
+}
+
+.floor_plan_container {
+    display: flex;
+    /* 设置为 flex 布局 */
+    width: 100%;
+}
+
+.text_floor {
+    width: 55%;
+    /* 根据需要调整宽度 */
+    margin-left: -3%;
+    margin-top: 8%;
+    /* 按照需要调整左边距 */
+    padding: 20px;
+    /* 添加内边距，使文字不会贴近容器边缘 */
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.image_floor img {
+    display: block;
+    margin-left: -33%;
+    margin-top: 20%;
+    width: 600px;
+    height: auto;
+    padding-top: 15%
+}
+
+.floor_sketch img {
+    display: block;
+    margin-left: -30%;
+    margin-top: 30%;
+    width: 600px;
+    height: auto;
+    padding-top: 15%
+}
+
+.site_map img {
+    display: block;
+    margin-left: -9%;
+    margin-top: 0%;
+    width: 1200px;
+    height: auto;
+    padding-top: 5%
+}
+
+.prototype_container {
+    display: flex;
+    /* 设置为 flex 布局 */
+    width: 100%;
+}
+
+.text_prototype {
+    width: 55%;
+    /* 根据需要调整宽度 */
+    margin-left: -3%;
+    margin-top: 3%;
+    /* 按照需要调整左边距 */
+    padding: 20px;
+    /* 添加内边距，使文字不会贴近容器边缘 */
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.image_prototype img {
+    display: block;
+    margin-left: -40%;
+    width: 650px;
+    height: auto;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.image_prototype2 img {
+    display: block;
+    margin-left: -40%;
+    width: 490px;
+    height: auto;
+    padding-top: 26%;
+    padding-bottom: 20%;
+}
