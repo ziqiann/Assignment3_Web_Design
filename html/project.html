@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/project.css">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i|Poppins:300,400,500,600,700&amp;subset=cyrillic"
+    rel="stylesheet">
+  <title>projects</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <!-- main navigation -->
+    <nav>
+      <!-- home button linking to main page -->
+      <a href="mainpage.html" class="home-btn">Ieoh Ming Pei</a>
+      <!-- navigation list -->
+      <ul class="nav-list">
+        <li><a href="#" class="nav-link">PROJECTS</a></li>
+        <li><a href="about.html" class="nav-link">ABOUT</a></li>
+      </ul>
+    </nav>
+
+    <!-- search input field -->
+    <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search...">
+
+    <!-- filter buttons section -->
+    <div class="filter-buttons">
+      <!-- filter button for showing all items -->
+      <button class="filter-button-standalone filter-all" data-filter="">ALL</button>
+      <!-- filter button for location -->
+      <div class="filter-button filter-location">
+        LOCATION
+        <!-- location filter dropdown -->
+        <div class="dropdown">
+          <button class="dropdown-item" data-filter="NA">North America</button>
+          <button class="dropdown-item" data-filter="Asia">Asia</button>
+          <button class="dropdown-item" data-filter="Europe">Europe</button>
+        </div>
+      </div>
+      <!-- filter button for use -->
+      <div class="filter-button filter-use">
+        USE
+        <!-- use filter dropdown -->
+        <div class="dropdown">
+          <button class="dropdown-item" data-filter="residential">Residential</button>
+          <button class="dropdown-item" data-filter="healthcare">Health Care</button>
+          <button class="dropdown-item" data-filter="religious">Religious</button>
+          <button class="dropdown-item" data-filter="office">Commercial</button>
+          <button class="dropdown-item" data-filter="museum">Museum</button>
+          <button class="dropdown-item" data-filter="civic">Civic</button>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+
+  <!-- The layout of the picture, let all the pictures follow the layout of css -->
+  <div class="image-grid">
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page1.html" class="grid-item" class="building-image" data-location="Asia" data-use="religious">
+      <img src="../assets/work_img/work001.jpeg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">Japan 2018</span>
+        <br>
+        <span class="image-name-large">Institute of Aesthetics Chapel</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page2.html" class="grid-item" class="building-image" data-location="NA" data-use="civic">
+      <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*kavsK5p4jfcZh5MIJchFBA.jpeg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">US 1978</span>
+        <br>
+        <span class="image-name-large">National Gallery of Art - East Building</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page3.html" class="grid-item" class="building-image" data-location="Europe" data-use="residential">
+      <img src="../assets/work_img/work006.jpeg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">England 2003</span>
+        <br>
+        <span class="image-name-large">Oare Pavilion</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page4.html" class="grid-item" class="building-image" data-location="NA" data-use="civic">
+      <img src="https://files.structurae.net/files/photos/2754/dsc_0156-4.jpg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">US 1966</span>
+        <br>
+        <span class="image-name-large">National Centre of<br>Atmospheric Research</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page5.html" class="grid-item" class="building-image" data-location="Europe" data-use="museum">
+      <img src="../assets/work_img/work019.webp">
+      <span class="image-name">
+        <span class="image-name-small">France 1989</span>
+        <br>
+        <span class="image-name-large">Grand Louvre</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page6.html" class="grid-item" class="building-image" data-location="Asia" data-use="museum">
+      <img src="../assets/work_img/work005.jpeg">
+      <span class="image-name">
+        <span class="image-name-small">Qatar 2008</span>
+        <br>
+        <span class="image-name-large">Museum of Islamic Art</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page7.html" class="grid-item" class="building-image" data-location="Asia" data-use="Museum">
+      <img
+        src="https://www.re-thinkingthefuture.com/wp-content/uploads/2020/06/A1077-I.M.-Pei-Iconic-Projects-Suzhou-Museum-Image-2.jpg">
+      <span class="image-name">
+        <span class="image-name-small">China 2006</span>
+        <br>
+        <span class="image-name-large">Suzhou Museum</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page8.html" class="grid-item" class="building-image" data-location="Europe" data-use="museum">
+      <!-- Building name with year and full name -->
+      <img src="../assets/work_img/work007.jpeg">
+      <span class="image-name">
+        <span class="image-name-small">Germany 2003</span>
+        <br>
+        <span class="image-name-large">Deutsches Historisches Museum</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page9.html" class="grid-item" class="building-image" data-location="NA" data-use="civic">
+      <img src="https://www.eypae.com/sites/default/files/styles/866h/public/2020-11/5004800_00_web.jpg?itok=VUID7ziQ">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">US 1979</span>
+        <br>
+        <span class="image-name-large">Kennedy library</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page24.html" class="grid-item" class="building-image" data-location="NA" data-use="museum">
+      <img
+        src="https://pcfandtypecodewebstuff.s3.amazonaws.com/images/M85Q-1.ext.TimothyHursley.8704_E05_00.max-1600x1600.jpg">
+      <span class="image-name">
+        <span class="image-name-small">US 1995</span>
+        <br>
+        <span class="image-name-large">Rock & Roll Hall of Fame + Museum</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page30.html" class="grid-item" class="building-image" data-location="Asia" data-use="office">
+      <img src="../assets/work_img/work009.jpeg">
+      <span class="image-name">
+        <span class="image-name-small">China 2001</span>
+        <br>
+        <span class="image-name-large">Bank of China Head Office</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page10.html" class="grid-item" class="building-image" data-location="NA" data-use="civic">
+      <img
+        src="https://www.claudejobin.com/wp-content/uploads/2019/05/architect-im-pei-1978-dallas-city-hall-presented-by-the-molly-claude-team-realtors-ottawa.jpg">
+      <span class="image-name">
+        <span class="image-name-small">US 1977</span>
+        <br>
+        <span class="image-name-large">Dallas City Hall</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page11.html" class="grid-item" class="building-image" data-location="Europe" data-use="museum">
+      <img src="../assets/work_img/work011.jpeg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">Greece 1997</span>
+        <br>
+        <span class="image-name-large">Basil & Elise Goulandris<br>Museum of Modern Art</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page12.html" class="grid-item" class="building-image" data-location="Asia" data-use="museum">
+      <img src="../assets/work_img/work012.jpeg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">Japan 1997</span>
+        <br>
+        <span class="image-name-large">Miho Museum</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page2.html" class="grid-item" class="building-image" data-location="Asia" data-use="civic">
+      <img src="../assets/work_img/work002.jpeg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">China 2009</span>
+        <br>
+        <span class="image-name-large">Macao Science Center</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page4.html" class="grid-item" class="building-image" data-location="NA" data-use="civic">
+      <img src="../assets/work_img/work004.jpeg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">US 2006</span>
+        <br>
+        <span class="image-name-large">Embassy of the People’s Republic<br>of China in the Chancery Building</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page13.html" class="grid-item" class="building-image" data-location="US" data-use="healthcare">
+      <img src="../assets/work_img/work013.jpeg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">US 1999</span>
+        <br>
+        <span class="image-name-large">Buck Institute for Age Research</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page14.html" class="grid-item" class="building-image" data-location="Europe" data-use="museum">
+      <img src="../assets/work_img/work014.jpeg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">Luxembourg 2006</span>
+        <br>
+        <span class="image-name-large">Musee D’Art Moderne Grand Duc Jean</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page15.html" class="grid-item" class="building-image" data-location="Asia" data-use="religious">
+      <img src="../assets/work_img/work015.jpeg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">Japan 1990</span>
+        <br>
+        <span class="image-name-large">Joy of Angels Bell Tower</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page16.html" class="grid-item" class="building-image" data-location="NA" data-use="healthcare">
+      <img src="../assets/work_img/work016.webp">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">US 1992</span>
+        <br>
+        <span class="image-name-large">University of Alabama<br>Health Services Foundation</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page17.html" class="grid-item" class="building-image" data-location="NA" data-use="office">
+      <img src="../assets/work_img/work017.jpeg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">US 1993</span>
+        <br>
+        <span class="image-name-large">Four Seasons Hotel</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page18.html" class="grid-item" class="building-image" data-location="NA" data-use="office">
+      <img src="../assets/work_img/work018.jpeg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">US 1991</span>
+        <br>
+        <span class="image-name-large">Wildwood</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page20.html" class="grid-item" class="building-image" data-location="NA" data-use="office">
+      <img src="../assets/work_img/work020.jpeg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">US 1985</span>
+        <br>
+        <span class="image-name-large">IBM Headquarters Entrance Pavilion</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page21.html" class="grid-item" class="building-image" data-location="Asia" data-use="religious">
+      <img src="https://images.adsttc.com/media/images/5037/f0a4/28ba/0d59/9b00/0580/large_jpg/stringio.jpg?1423758011">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">China 1954</span>
+        <br>
+        <span class="image-name-large">Luce Memorial Chapel</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page22.html" class="grid-item" class="building-image" data-location="Asia" data-use="office">
+      <img src="https://img.archiexpo.com/images_ae/photo-g/58213-7676503.jpg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">China 1989</span>
+        <br>
+        <span class="image-name-large">Bank of China Tower</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page23.html" class="grid-item" class="building-image" data-location="Asia" data-use="residential">
+      <img src="https://impeifoundation.org/wp-content/uploads/2022/06/7721-Sunning-Plaza-Tksteven.jpg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">China 1982</span>
+        <br>
+        <span class="image-name-large">Sunning Plaza</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page23.html" class="grid-item" class="building-image" data-location="NA" data-use="residential">
+      <img src="https://impeifoundation.org/wp-content/uploads/2022/06/5200-Pei-Katona-Ext-01.jpg">
+      <span class="image-name">
+        <span class="image-name-small">US 1952</span>
+        <br>
+        <span class="image-name-large">Pei Residence</span>
+      </span>
+    </a>
+
+    <!-- Grid item for Kips Bay Plaza with data attributes for location and use -->
+    <a href="page26.html" class="grid-item" class="building-image" data-location="NA" data-use="residential">
+      <!-- Building image -->
+      <img
+        src="https://media-cloud.corcoranlabs.com/filters:format(webp)/fit-in/1500x1500/PropertyAPI/NewTaxi/19699/mediarouting.vestahub.com/Media/105122580?w=3840&q=75">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">US 1962</span>
+        <br>
+        <span class="image-name-large">Kips Bay Plaza</span>
+      </span>
+    </a>
+
+    <!-- Grid item for Everson Museum with data attributes for location and use -->
+    <a href="page25.html" class="grid-item" class="building-image" data-location="NA" data-use="museum">
+      <!-- Building image -->
+      <img
+        src="https://pcfandtypecodewebstuff.s3.amazonaws.com/images/kRR6-1.ext.EzraStoller-ESTO.6147_E02_00_cr.max-1600x1200.jpg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">US 1968</span>
+        <br>
+        <span class="image-name-large">Everson Museum</span>
+      </span>
+    </a>
+
+    <!-- Grid item with data attributes for location and use -->
+    <a href="page8.html" class="grid-item" class="building-image" data-location="NA" data-use="civic">
+      <!-- Building image -->
+      <img src="../assets/work_img/work008.jpeg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">US 1999</span>
+        <br>
+        <span class="image-name-large">Republic of Korea Permanent<br>Mission to the United Nations</span>
+      </span>
+    </a>
+
+    <!-- Grid item for Guggenheim Pavilion with data attributes for location and use -->
+    <a href="page8.html" class="grid-item" class="building-image" data-location="NA" data-use="healthcare">
+      <!-- Building image -->
+      <img
+        src="https://pcfandtypecodewebstuff.s3.amazonaws.com/images/G6l7-0.thumb.8321.health_PWarchol_E03_00.max-1600x1600.jpg">
+      <!-- Building name with year and full name -->
+      <span class="image-name">
+        <span class="image-name-small">US 1992</span>
+        <br>
+        <span class="image-name-large">Guggenheim Pavilion,<br>Mount Sinai Medical Center</span>
+      </span>
+    </a>
+
+    <!-- Grid item for East-West Center with data attributes for location and use -->
+    <a href="page10.html" class="grid-item" class="building-image" data-location="NA" data-use="residential">
+      <!-- Building image -->
+      <img src="https://impeifoundation.org/wp-content/uploads/2022/06/6001-JYoung-EastWestCenter-01PCF.jpg">
+      <span class="image-name">
+        <!-- Building name with year and full name -->
+        <span class="image-name-small">US 1963</span>
+        <br>
+        <span class="image-name-large">East-West Center, University of Hawaii</span>
+      </span>
+    </a>
+    <!-- Grid item with data attributes for location and use --> 
+    <a href="page11.html" class="grid-item" class="building-image" data-location="NA" data-use="residential">
+      <img src="https://homejane.com/wp-content/uploads/2018/07/Century-Towers-Century-City-2-1024x768-1.jpg">
+      <!-- Building image -->
+      <span class="image-name">
+        <!-- Building name with year and full name -->
+        <span class="image-name-small">US 1965</span>
+        <br>
+        <span class="image-name-large">Century City Apartments</span>
+      </span>
+    </a>
+
+  </div>
+
+</body>
+
+
+<script>
+
+  // Search function for filtering grid items based on user input
+  function searchFunction() {
+    var input, filter, items, txtValue;
+    // Get input element, user's input, and grid items
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    items = document.getElementsByClassName("grid-item");
+
+    // Loop through grid items and show or hide based on user's input
+    for (var i = 0; i < items.length; i++) {
+      txtValue = items[i].textContent || items[i].innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        items[i].style.display = "block";
+      } else {
+        items[i].style.display = "none";
+      }
+    }
+  }
+
+  // Event listener for filtering grid items based on filter buttons
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get filter buttons
+    const filterButtons = document.querySelectorAll(".filter-button .dropdown-item");
+
+    // Add click event listener to each filter button
+    filterButtons.forEach(function (button) {
+      button.addEventListener("click", function (event) {
+        // Determine filter type (location or use)
+        const filterType = button.parentElement.parentElement.classList.contains("filter-location")
+          ? "location"
+          : "use";
+        // Get filter value from button's data-filter attribute
+        const filterValue = event.target.getAttribute("data-filter");
+
+        // Get all grid items
+        const gridItems = document.querySelectorAll(".grid-item");
+
+        // Loop through grid items and show or hide based on filter value
+        gridItems.forEach(function (item) {
+          const itemValue = item.getAttribute("data-" + filterType);
+
+          if (filterValue && itemValue !== filterValue && filterValue !== "") {
+            item.style.display = "none";
+          } else {
+            item.style.display = "block";
+          }
+        });
+      });
+    });
+
+    // Get "All" filter button
+    const allButton = document.querySelector(".filter-all");
+    // Add click event listener to show all grid items when "All" button is clicked
+    allButton.addEventListener("click", function () {
+      const gridItems = document.querySelectorAll(".grid-item");
+      gridItems.forEach(function (item) {
+        item.style.display = "block";
+      });
+    });
+  });
+
+
+</script>
+
+</html>
