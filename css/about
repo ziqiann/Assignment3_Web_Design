@@ -1,0 +1,377 @@
+/* Set up basic layout styles for the entire page */
+body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1912px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Set up header styles */
+.header {
+  width: 100%;
+  max-width: 1690px;
+  height: auto;
+  margin: 0px auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 360;
+  padding: 0px 0;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+/* Set up navigation bar styles */
+nav {
+  width: 100%;
+  max-width: 1690px;
+  height: auto;
+  margin: 10px auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 360;
+  padding: 10px 0;
+}
+
+/* Set up home button styles */
+.home-btn {
+  font-family: 'Poppins';
+  font-weight: 360;
+  line-height: 60px;
+  font-size: 28px;
+  color: #fbfbfb;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.6s ease-in-out;
+  position: relative;
+}
+
+.home-btn:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* Add underline effect to home button */
+.home-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 50%;
+  height: 2px;
+  background-color: #181818;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Add underline effect on home button hover */
+.home-btn:hover::after {
+  opacity: 1;
+}
+
+/* Set up navigation list styles */
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Set up navigation link styles */
+.nav-link {
+  margin-left: -10px;
+  text-decoration: none;
+  color: rgb(253, 253, 253);
+  font-size: 20px;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: rgb(10, 10, 10);
+  text-decoration: none;
+}
+
+/* Add underline effect on navigation link hover */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  bottom: -2px;
+  width: 50%;
+  height: 2px;
+  background-color: #0f0f0f;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+}
+
+/* Set up background image styles */
+#bg-image {
+  background-image: url('https://everson.org/wp-content/uploads/2019/05/impei.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  z-index: -1;
+}
+
+/* style the main title of the website */
+.title_name {
+  position: relative;
+  margin-top: 33%;
+  margin-left: -25%;
+  font-size: 200px;
+  font-weight: 600;
+  line-height: 1;
+  color: #FFFFFF;
+}
+
+/* style the subtitle */
+.architect {
+  position: relative;
+  margin-top: -10%;
+  margin-left: 72%;
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 1;
+  color: #FFFFFF;
+  content: "";
+  width: 100%;
+  height: 6px;
+  background-color: #ffffff;
+}
+
+/* Styles for the quote image */
+.quote img {
+  position: relative;
+  margin-top: 30%;
+  margin-left: -10%;
+  width: 100px;
+  height: auto;
+}
+
+/* Styles for the brief section */
+.brief {
+  font-family: 'Cinzel';
+  font-style: italic;
+  position: relative;
+  margin-top: 0%;
+  width: 100%;
+  left: 0;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 76px;
+  color: #000000;
+}
+
+/* Styles for the profile image */
+.profile_image img {
+  position: relative;
+  width: 600px;
+  height: auto;
+  margin-right: 1000px;
+  margin-top: 15%;
+  left: 180px;
+}
+
+/* Styles for the About section */
+.container_About {
+  width: 40%;
+  margin-left: 50%;
+  margin-top: -22%;
+  padding: 20px;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+/* Styles for the introduction section */
+.introduction {
+  width: 85%;
+  margin-left: 9%;
+  margin-top: 5%;
+  font-weight: 300;
+  font-size: 24px;
+  padding-bottom: 5%;
+}
+
+/* pictures */
+.picture-container {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  height: 400px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: -30%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styles for the images inside the picture container */
+.picture-container img {
+  height: 400px;
+  display: inline-block;
+}
+
+.scroll-progress-bar {
+  position: absolute;
+  bottom: 0; /* Adjust this value between the progress bar and the container bottom */
+  left: 0;
+  width: 0;
+  height: 5px; /* Change this to your desired height */
+  background-color: rgb(255, 255, 255); 
+  transition: width 0.25s;
+}
+
+/* Styles for the colored section */
+.colored-section {
+  margin-top: 70px;
+  background-color: #EBEBEB;
+  width: 100%;
+  padding-left: 40px;
+  padding-top: 90px;
+  padding-bottom: 70px;
+}
+
+/* Styles for the title in the awards section */
+.title_awards {
+  font-weight: 300;
+  font-size: 24px;
+  margin-left: 140px;
+  margin-top: 0%;
+}
+
+/* Styles for the awards section */
+.awards {
+  padding-top: 12px;
+  margin-top: 0;
+  margin-left: 120px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 2;
+}
+
+/* Styles for the life section */
+.life_of_imp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styles for the life section title */
+.life h2 {
+  font-weight: 400;
+  font-size: 42px;
+  padding-top: 90px;
+  text-align: center;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+/* Styles for the line under the life section title */
+.life h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 1;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+}
+
+/* Styles for the content wrapper */
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+/* Styles for the left subtitle */
+.left-subtitle {
+  text-align: right;
+  width: 300px;
+  /* Add a fixed width to left-subtitle */
+  position: relative;
+}
+
+/* Style for the title of the left column */
+.left-subtitle h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* Style for the circle in the left column */
+.left-subtitle::before {
+  content: "";
+  width: 90px;
+  /* Adjust the width and height to modify the size of the circle */
+  height: 90px;
+  background-color: #FF6700;
+  border-radius: 90%;
+  /* Create a circle by setting border-radius to 50% */
+  position: absolute;
+  /* Position the circle relative to the .left-subtitle */
+  top: 40%;
+  /* Center the circle vertically */
+  left: 260px;
+  /* Adjust the left value to position the circle to the left of .left-subtitle */
+  transform: translateY(-50%);
+  /* Align the circle vertically */
+  z-index: -1;
+}
+
+/* Style for the text in the right column */
+.timeline_text {
+  width: 55%;
+  padding: 10px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-left: 12%;
+}
+
+/* Style for the container of the images */
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+/* Style for the margin between the images */
+.image-container img:not(:last-child) {
+  margin-right: 5px;
+}
+
+/* Style for the images */
+.image-container img {
+  max-width: 50%;
+  max-width: auto;
+  float: right;
+  width: 500px;
+  height: auto;
+}
